@@ -22,9 +22,9 @@ Parameters
 ## Lambda
 ```bash
 git clone https://github.com/ventx/ler53s3.git
-    cd trackbone
-    npm install
-    zip -r lambda.zip 'lambda.js' 'cert.js' './node_modules'
+cd ler53s3
+npm install
+zip -r lambda.zip 'lambda.js' 'cert.js' './node_modules'
 ```
 You have two options for using this as a lambda function. 
 1. Lambda proxy function
