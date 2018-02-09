@@ -1,0 +1,43 @@
+{
+  "name": "@ventx/ler53s3",
+  "version": "0.0.1",
+  "description": "Create let's encrypt certificates with aws route53 and store them in s3",
+  "main": "index.js",
+  "scripts": {
+    "jsdoc": "./node_modules/.bin/jsdoc -c jsdoc-conf.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ventx/ler53s3.git"
+  },
+  "keywords": [
+    "aws",
+    "s3",
+    "lets-encrypt",
+    "le",
+    "challenge",
+    "certificate",
+    "ssl",
+    "lambda",
+    "route53",
+    "r53"
+  ],
+  "author": "Wolfgang Felbermeier <wolfgang@ventx.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ventx/dyname/issues"
+  },
+  "homepage": "https://github.com/ventx/dyname#readme",
+  "dependencies": {
+    "aws-sdk": "^2.190.0",
+    "cli": "^1.0.1",
+    "greenlock": "^2.1.18",
+    "le-challenge-route53": "^0.1.3"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.5.5"
+  },
+  "bin": {
+    "ler53s3": "./cli.js"
+  }
+}
