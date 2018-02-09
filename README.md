@@ -27,9 +27,9 @@ npm install
 zip -r lambda.zip 'lambda.js' 'cert.js' './node_modules'
 ```
 You have two options for using this as a lambda function. 
-1. Lambda proxy function
+### Lambda proxy function
 You may use the handler "lambda.proxy_handle". This function you can use with an API Gateway as a proxy
-method. It will only accept POST requests and you need to provide the following parameters in the request body (The options just have other names than in the cli, but are the same. So see the description from above):
+method. It will only accept POST requests and you need to provide the following parameters in the request body (The options just have other names than in the cli, but are the same. So see the description from above):  
 
 - domain
 - email
@@ -39,7 +39,7 @@ method. It will only accept POST requests and you need to provide the following 
 
 All Options are required. You will get a 200 response, if everything worked and the certificate is stored
 in s3. For security reasons you won't get the certificate in the output of the function call. So the certificate won't leave the AWS infrastructure.
-2. Regular lambda function
+### Regular lambda function
 You may use the handler "lambda.handle". Parameters are the same as in the proxy handler function.
 
 ## Programmatic usage
