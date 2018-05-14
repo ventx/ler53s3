@@ -9,7 +9,7 @@ let options = cli.parse({
 	keyPrefix: ['k', 'The key prefix to store the certificate to', 'string']
 });
 
-const cert = require('cert');
+const cert = require('./cert');
 
 cert(options)
 .then(() => console.log("Created certificate and stored it to s3"))

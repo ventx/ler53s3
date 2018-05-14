@@ -1,6 +1,6 @@
 {
   "name": "@ventx/ler53s3",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create let's encrypt certificates with aws route53 and store them in s3",
   "main": "index.js",
   "scripts": {
